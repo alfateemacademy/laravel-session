@@ -13,6 +13,13 @@
 
 Route::pattern('id', '[1-9][0-9]*');
 
+Route::group(array('prefix' => 'admin'), function() {
+	
+	Route::controller('genre', 'AdminGenreController');
+	Route::controller('/', 'AdminHomeController');
+
+});
+
 /*Route::get('/about', 'HomeController@about');
 
 Route::get('/post/listing', 

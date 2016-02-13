@@ -23,10 +23,10 @@ $app = new Illuminate\Foundation\Application;
 | given environment, then we will automatically detect it for you.
 |
 */
-//die(gethostname());
+// die(gethostname());
 $env = $app->detectEnvironment(array(
 
-	'local' => array('homestead', 'al-fateem-nb')
+	'local' => array('homestead', 'Al-Fateem-NB')
 
 ));
 
